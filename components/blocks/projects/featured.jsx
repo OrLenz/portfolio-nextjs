@@ -1,14 +1,13 @@
 import Image from 'next/image'
 
-import { useEffect } from 'react'
 import { m, useAnimation } from "framer-motion"
+import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-import Badges 		from '../../utils/badge.list.util'
-import Icon 		from '../../utils/icon.util'
+import Badges from '../../utils/badge.list.util'
+import Icon from '../../utils/icon.util'
 
-import css 			from '../../../styles/sections/projects/featured.module.scss'
-import content 		from '../../../content/projects/featured.json'
+import css from '../../../styles/sections/projects/featured.module.scss'
 
 export default function FeaturedProject({ content }, index) {
 
@@ -39,20 +38,26 @@ export default function FeaturedProject({ content }, index) {
 			<div className={css.details}>
 				<div className={css.projectHeader}>
 					<div className={css.header}>
-						<h3 className="highlight">{project}</h3><span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>	
+						<h3 className="highlight">{project}</h3>
+						{repo && <span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>}
 					</div>
 					<div className={css.description}>
 						<p><strong>{descriptionTitle}</strong> {description}</p>
 					</div>
+					{stack.length > 0 &&
 					<div className={css.stackContainer}>
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
+					}
+					{url &&
 					<m.div variants={''} className={css.viewProject}>
 						<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
 					</m.div>
+					}
 				</div>
 			</div>
 
+			{images.length > 0 &&
 			<div className={css.imageContainer}>
 				<span className={`${css.imageAnimationContainer}`}>
 					{ images.map( ({key, url, hover, h, w }, index) => {
@@ -67,6 +72,7 @@ export default function FeaturedProject({ content }, index) {
 					) }
 				</span>
 			</div>
+			}
 		</m.section>
 	)
 }

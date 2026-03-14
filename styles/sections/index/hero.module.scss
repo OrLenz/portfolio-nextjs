@@ -53,6 +53,22 @@
 		}
 	}
 
+	.socialLinks {
+		display: flex;
+		gap: 1.25rem;
+		margin-top: 1.5rem;
+
+		a {
+			color: var(--primary-dim);
+			font-size: 1.25rem;
+			transition: color 0.2s ease;
+
+			&:hover {
+				color: var(--primary-bright);
+			}
+		}
+	}
+
 	@include media($max: $mobile) {
 		.preHeader {
 			font-size: 1rem;

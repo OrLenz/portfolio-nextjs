@@ -1,6 +1,6 @@
+import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import Hero from '../../../components/sections/index/hero'
-import '@testing-library/jest-dom'
 
 describe('Hero section parts', () => {
 
@@ -8,7 +8,7 @@ describe('Hero section parts', () => {
 		render(<Hero />)
 		
 		const heading = screen.getByRole('heading', {
-			name: /Andrew Nelson\./i,
+			name: /Lenando Respati\./i,
 		})
 		
 		expect(heading).toBeInTheDocument()

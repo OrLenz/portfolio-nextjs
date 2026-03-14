@@ -1,0 +1,55 @@
+{
+	"title": "Technical",
+	"preTitle": "Hardskills",
+	"subTitle": "As a full stack engineer, I build scalable systems end-to-end — from frontend interfaces to backend microservices and cloud infrastructure — using a diverse and evolving set of tools and technologies.",
+	"polymath": {
+		"title": "Full stack foundations",
+		"icon": ["fat", "chart-network"],
+		"copy": "With a strong foundation across frontend, backend, and cloud infrastructure, I bring a holistic perspective to every project. I am constantly learning and adapting — whether it's picking up a new framework for a modernization effort or diving into cloud-native patterns for enterprise-scale deployments."
+	},
+	"software": {
+		"title": "Software I love to work with",
+		"icon": "grid-2-plus",
+		"copy": "I leverage a carefully curated set of tools to maximize productivity and collaboration. From design and API testing to database management and architectural planning, these are the tools that power my daily workflow.",
+		"list": [
+			{ "key": "vscode",			"name": "VSCode",			"type": "devicon" },
+			{ "key": "figma",			"name": "Figma",			"type": "devicon" },
+			{ "key": "notion",			"name": "Notion",			"type": "devicon" },
+			{ "key": "mailbox",			"name": "Postman/Apidog",	"type": "fas" },
+			{ "key": "database",		"name": "DBeaver",			"type": "fas" },
+			{ "key": "draw-polygon",	"name": "Excalidraw",		"type": "fas" },
+			{ "key": "diagram-project",	"name": "Whimsical",		"type": "fas" },
+			{ "key": "robot",			"name": "Claude AI",		"type": "fas" },
+			{ "key": "github",			"name": "GitHub Copilot",	"type": "devicon" }
+		]
+	},
+	"tech": {
+		"title": "Technologies I love to build with",
+		"icon": "laptop-code",
+		"copy": "I deeply enjoy solving problems through code — from frontend interfaces to backend services, cloud infrastructure, and everything in between. These are the core technologies I work with across my projects.",
+		"list": [
+			{ "key": "java",			"name": "Java",				"type": "devicon" },
+			{ "key": "go",				"name": "Go",				"type": "devicon" },
+			{ "key": "javascript",		"name": "JavaScript",		"type": "devicon" },
+			{ "key": "typescript",		"name": "TypeScript",		"type": "devicon" },
+			{ "key": "nextjs",			"name": "Next.js",			"type": "devicon" },
+			{ "key": "react",			"name": "React",			"type": "devicon" },
+			{ "key": "angularjs",		"name": "Angular",			"type": "devicon" },
+			{ "key": "flutter",			"name": "Flutter",			"type": "devicon" },
+			{ "key": "nodejs",			"name": "Node.js",			"type": "devicon" },
+			{ "key": "nestjs",			"name": "NestJS",			"type": "devicon" },
+			{ "key": "spring",			"name": "Spring Boot",		"type": "devicon" },
+			{ "key": "laravel",			"name": "Laravel",			"type": "devicon" },
+			{ "key": "kubernetes",		"name": "Kubernetes",		"type": "devicon" },
+			{ "key": "docker",			"name": "Docker",			"type": "devicon" },
+			{ "key": "amazonwebservices",	"name": "AWS",			"type": "devicon" },
+			{ "key": "googlecloud",		"name": "GCP",				"type": "devicon" },
+			{ "key": "rabbitmq",		"name": "RabbitMQ",			"type": "devicon" },
+			{ "key": "git",				"name": "Git",				"type": "devicon" },
+			{ "key": "linux",			"name": "Linux",			"type": "devicon" },
+			{ "key": "html5",			"name": "HTML5",			"type": "devicon" },
+			{ "key": "css3",			"name": "CSS3",				"type": "devicon" },
+			{ "key": "sass",			"name": "SASS",				"type": "devicon" }
+		]
+	}
+}

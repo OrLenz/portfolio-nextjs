@@ -1,0 +1,142 @@
+{
+	"title": "Experience",
+	"preTitle": "Career",
+	"subTitle": "Building scalable systems and driving impactful engineering across enterprise and startup environments.",
+	"companies": [
+		{
+			"name": "PT XLSMART Telecom Sejahtera Tbk",
+			"type": "Contract",
+			"startDate": "2024-12",
+			"endDate": null,
+			"location": "South Jakarta, Jakarta, Indonesia · Hybrid",
+			"description": "XLSMART is one of Indonesia's leading telecommunications providers. Joined to modernize legacy systems and build cloud-native enterprise applications supporting core business operations.",
+			"positions": [
+				{
+					"title": "Software Engineer",
+					"startDate": "2024-12",
+					"endDate": null,
+					"description": "Built and maintained internal web tools and applications to streamline core business operations. Revamped legacy systems with Next.js (frontend) and Spring Boot (backend), applying clean architecture principles. Containerized apps with Kubernetes for scalable, consistent deployments, and managed CI/CD pipelines with reliable rollouts on AWS.",
+					"contributions": [
+						{
+							"item": "Enterprise Product Catalogue (EPC) — Centralized product data across platforms",
+							"detail": "Built bulk product creation pipeline with Spring Boot + AWS SQS/SNS/S3 and Angular-based Product Live Library UI"
+						},
+						{
+							"item": "Cloud-to-Cloud (C2C) Migration — Led migration from AWS to Tencent Cloud",
+							"detail": "Refactored SDKs, endpoints, and validated cross-system communication with phased cutovers"
+						},
+						{
+							"item": "Hyperbot Modernization — Consolidated multiple monolithic apps into a single super-core portal",
+							"detail": "Transitioned from Vaadin/private frameworks to Next.js frontend and Go/Spring microservices backend"
+						},
+						{
+							"item": "Technical Documentation Transformation — Rewrote legacy BSS documentation",
+							"detail": "Supported vendor transition from Amdocs to Whale Cloud Technologies (WCT)"
+						}
+					],
+					"stack": [
+						{ "key": "nextjs",				"name": "Next.js",			"type": "devicon" },
+						{ "key": "angularjs",			"name": "Angular",			"type": "devicon" },
+						{ "key": "spring",				"name": "Spring Boot",		"type": "devicon" },
+						{ "key": "go",					"name": "Go",				"type": "devicon" },
+						{ "key": "java",				"name": "Java",				"type": "devicon" },
+						{ "key": "kubernetes",			"name": "Kubernetes",		"type": "devicon" },
+						{ "key": "amazonwebservices",	"name": "AWS",				"type": "devicon" },
+						{ "key": "docker",				"name": "Docker",			"type": "devicon" },
+						{ "key": "git",					"name": "Git",				"type": "devicon" }
+					]
+				}
+			]
+		},
+		{
+			"name": "Hallo Technology",
+			"type": "Freelance",
+			"startDate": "2025-04",
+			"endDate": null,
+			"location": "Jakarta, Indonesia · Remote",
+			"description": "Hallo Technology develops Hallo Laundry, a super app designed to solve fraud and inefficiency in laundry operations by digitizing processes and integrating IoT with washing and drying machines.",
+			"positions": [
+				{
+					"title": "Software Engineer",
+					"startDate": "2025-04",
+					"endDate": null,
+					"description": "Contributed to the development of a multi-platform laundry management ecosystem. Enabled owners to manage services, discounts, employee attendance/performance, and outlet operations through a single solution. Delivered analytics dashboards and finance reports to support business expansion.",
+					"contributions": [
+						{
+							"item": "Hallo BOS (Web App) — Owner portal built with Next.js",
+							"detail": "Managing services, employees, and IoT integrations"
+						},
+						{
+							"item": "Hallo Kasir (Mobile App) — Employee-facing app built with Flutter",
+							"detail": "Supporting transactions, IoT machine operations, and petty cash management"
+						},
+						{
+							"item": "Paper Online (Web App) — Digital invoice portal built with Next.js",
+							"detail": "Enabling kiosk-based IoT machine activation for customers"
+						},
+						{
+							"item": "Backend & Infrastructure — Microservices with NestJS, Laravel, and Go",
+							"detail": "Orchestrated via Kraken API Gateway, deployed on Google Cloud Platform"
+						},
+						{
+							"item": "R&D & Feature Expansion — Conducted research and requirement analysis",
+							"detail": "Including CRM capabilities to enhance customer engagement"
+						}
+					],
+					"stack": [
+						{ "key": "nextjs",			"name": "Next.js",			"type": "devicon" },
+						{ "key": "flutter",			"name": "Flutter",			"type": "devicon" },
+						{ "key": "nestjs",			"name": "NestJS",			"type": "devicon" },
+						{ "key": "laravel",			"name": "Laravel",			"type": "devicon" },
+						{ "key": "go",				"name": "Go",				"type": "devicon" },
+						{ "key": "googlecloud",		"name": "GCP",				"type": "devicon" },
+						{ "key": "javascript",		"name": "JavaScript",		"type": "devicon" },
+						{ "key": "typescript",		"name": "TypeScript",		"type": "devicon" },
+						{ "key": "git",				"name": "Git",				"type": "devicon" }
+					]
+				}
+			]
+		},
+		{
+			"name": "PT Pegadaian Galeri Dua Empat",
+			"type": "Contract",
+			"startDate": "2023-03",
+			"endDate": "2024-12",
+			"location": "Central Jakarta, Jakarta, Indonesia · On-site",
+			"description": "Subsidiary of PT Pegadaian (BUMN), specializing in gold retail and distribution. Built and maintained systems supporting critical gold and jewelry operations across the supply chain.",
+			"positions": [
+				{
+					"title": "Junior Full Stack Web Developer",
+					"startDate": "2023-03",
+					"endDate": "2024-12",
+					"description": "Built new features and applications using Java and Node.js. Handled staging deployments on GCP and Linux servers. Produced detailed Software Development Documents and collaborated with BA, QA, and SA teams using Agile methodology.",
+					"contributions": [
+						{
+							"item": "Passion Emas (Legacy Core System) — Maintained Pegadaian Support System Integrated Online",
+							"detail": "Built with Vaadin and Java 6, handling stock initiation, distribution, retail/wholesale sales, and accounting"
+						},
+						{
+							"item": "Emas Core & Emas Rest — Managed surrounding support systems",
+							"detail": "Scheduler for automated CSV processing and middleware enabling external integrations"
+						},
+						{
+							"item": "Galeri 24 New Core Apps — Developed next-gen core system for jewelry products",
+							"detail": "Angular frontend with Java Spark/Spring microservices and RabbitMQ event-driven architecture"
+						}
+					],
+					"stack": [
+						{ "key": "java",			"name": "Java",				"type": "devicon" },
+						{ "key": "spring",			"name": "Spring",			"type": "devicon" },
+						{ "key": "angularjs",		"name": "Angular",			"type": "devicon" },
+						{ "key": "nodejs",			"name": "Node.js",			"type": "devicon" },
+						{ "key": "rabbitmq",		"name": "RabbitMQ",			"type": "devicon" },
+						{ "key": "googlecloud",		"name": "GCP",				"type": "devicon" },
+						{ "key": "linux",			"name": "Linux",			"type": "devicon" },
+						{ "key": "gitlab",			"name": "GitLab",			"type": "devicon" },
+						{ "key": "jira",			"name": "Jira",				"type": "devicon" }
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"title": "About Me",
+	"preTitle": "Synopsis",
+	"subTitle": "I am a technology professional driven by a passion for transforming complex infrastructures into scalable, resilient platforms. My expertise spans legacy modernization, cloud-to-cloud migration, microservices architecture, and enterprise-scale application development. From gold retail systems at a government-owned enterprise to telco platforms powering millions of users, I design solutions that bridge business needs with technical excellence. Beyond engineering, I craft clear documentation that enables seamless vendor transitions and empowers teams to adopt new technologies with confidence. My work is guided by a commitment to reliability, clarity, and impact — building systems that not only function, but endure.",
+	"softskills": {
+		"title": "Softskills that pay the bills",
+		"icon": ["fat", "ear-listen"],
+		"copy": "Beyond my technical expertise, I bring strong leadership, communication, time management, and task management skills — sharpened through my experience as a project leader responsible for coordinating not just my own work, but my entire team's deliverables. I don't just ship to production; I present changelogs and highlight critical development decisions to supervisors, ensuring full transparency and alignment. Outside of work, I enjoy reading novels and self-improvement books to keep my mind sharp, and running to stay physically energized and focused."
+	},
+	"research": {
+		"title": "Research and planning",
+		"icon": ["fat", "fingerprint"],
+		"copy": "One of my favorite aspects of engineering is planning the architecture of a system. Whether it's modernizing monolithic applications into microservices, designing cloud migration strategies, or identifying areas of improvement to support business growth — I thrive in analyzing complex requirements and translating them into scalable, well-structured solutions.",
+		"methods": [
+			{ "key": "cubes",			"name": "System Architecture",		"type": "fad" },
+			{ "key": "cloud",			"name": "Cloud Migration",			"type": "fad" },
+			{ "key": "code-branch",		"name": "Microservices",			"type": "fad" },
+			{ "key": "layer-plus",		"name": "Legacy Modernization",		"type": "fad" },
+			{ "key": "chart-line",		"name": "Business Analysis",		"type": "fad" },
+			{ "key": "file-lines",		"name": "Technical Documentation",	"type": "fad" }
+		]
+	}
+}

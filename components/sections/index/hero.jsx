@@ -1,19 +1,19 @@
-import { useState } 		from 'react';
-import { TypeAnimation } 	from 'react-type-animation';
+import { useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 
-import Section 		from '../../structure/section';
-import Container 	from '../../structure/container';
+import Container from '../../structure/container';
+import Section from '../../structure/section';
 
-import space		from '../../utils/spacing.util';
+import space from '../../utils/spacing.util';
 
-import Icon 		from '../../utils/icon.util'
+import Icon from '../../utils/icon.util';
 
-import HeroBg		from '../../blocks/hero.bg/bg-color-1';
+import HeroBg from '../../blocks/hero.bg/bg-color-1';
 
-import hero 		from '../../../styles/sections/index/hero.module.scss';
-import button 		from '../../../styles/blocks/button.module.scss';
+import button from '../../../styles/blocks/button.module.scss';
+import hero from '../../../styles/sections/index/hero.module.scss';
 
-import content		from '../../../content/index/hero.json'
+import content from '../../../content/index/hero.json';
 
 
 /**
@@ -65,12 +65,16 @@ export default function Hero() {
 				</section>
 				<section>
 					<button	className={`button ${button.primary}`}
-							onClick={ () => window.location = 'mailto:hello@andrewnelson.net' } >
+							onClick={ () => window.location = content.buttons.primary.url } >
 						{content.buttons.primary.title}
 					</button>
 					<button className={`button ${button.secondary} leaveSite`}
-							onClick={ ()=> window.open("https://www.linkedin.com/in/--andrewnelson/", "_blank") } >
+							onClick={ ()=> window.open(content.buttons.secondary.url, "_blank") } >
 						{content.buttons.secondary.title}
+					</button>
+					<button className={`button ${button.secondary} leaveSite`}
+							onClick={ ()=> window.open(content.buttons.github.url, "_blank") } >
+						<Icon icon={[ 'fab', 'github' ]} /> {content.buttons.github.title}
 					</button>
 				</section>
 			</Container>

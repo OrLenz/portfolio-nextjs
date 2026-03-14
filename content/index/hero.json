@@ -1,6 +1,6 @@
 {
 	"intro": {
-		"start": "const Andrew = ( name, passion ) =>",
+		"start": "const Len = ( name, passion ) =>",
 		"end": "Hello, my name is",
 		"speed": 60,
 		"deletionSpeed": 80,
@@ -11,22 +11,27 @@
 	},
 
 	"header": {
-		"name": "Andrew Nelson.",
-		"usp": "I design and build meaningful experiences."
+		"name": "Lenando Respati.",
+		"usp": "I engineer scalable, future-ready platforms."
 	},
 
-	"paragraph": "I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact.",
+	"paragraph": "With expertise in modernization, cloud migration, and microservices, I design resilient architectures that evolve with business needs and deliver lasting impact.",
 
 	"buttons": {
 		"primary": {
 			"title": "Contact Me",
-			"url": "",
+			"url": "mailto:lenando.pro@gmail.com",
 			"leaveSite": false
 		},
 		"secondary": {
 			"title": "LinkedIn",
-			"url": "",
-			"leaveSite": "true"
+			"url": "https://www.linkedin.com/in/lenando-respati/",
+			"leaveSite": true
+		},
+		"github": {
+			"title": "GitHub",
+			"url": "https://github.com/OrLenz",
+			"leaveSite": true
 		}
 	}
 }
