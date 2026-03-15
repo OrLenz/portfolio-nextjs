@@ -42,15 +42,15 @@
 @include media($max: $mobile) {
 	:root {
 		// Fonts sizes
-		--font-xx:  0.60rem;
+		--font-xx:  0.625rem;
 		--font-xs:	0.75rem;
-		--font-s: 	0.875rem;
+		--font-s: 	0.825rem;
 		--font-r-s: 0.875rem;
-		--font-r: 	0.95rem;
+		--font-r: 	0.9375rem;
 		--font-m: 	1.00rem;
-		--font-l: 	2.00rem;
-		--font-xl-l: 2.00rem;
-		--font-xl: 	2.75rem;
+		--font-l: 	1.75rem;
+		--font-xl-l: 1.75rem;
+		--font-xl: 	2.25rem;
 
 		// Marging/padding sizes
 		--size-4-: 0.25rem;

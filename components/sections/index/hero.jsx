@@ -63,7 +63,7 @@ export default function Hero() {
 						{ content.paragraph }
 					</p>					
 				</section>
-				<section>
+				<section className={hero.buttonGroup}>
 					<button	className={`button ${button.primary}`}
 							onClick={ () => window.location = content.buttons.primary.url } >
 						{content.buttons.primary.title}

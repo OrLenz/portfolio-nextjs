@@ -135,11 +135,30 @@
 			}
 
 			.container {
-				padding: 2rem 1.25rem;
+				padding: 1.25rem 1rem;
+				border-radius: 1rem;
+
+				h3 {
+					font-size: 1rem;
+				}
+
+				p {
+					font-size: .875rem;
+					line-height: 1.5;
+				}
 			}
 
 			.image {
-				padding: 1rem;
+				padding: 0;
+				order: -1;
+
+				img {
+					width: 100%;
+					height: auto;
+					// aspect-ratio: 16/9;
+					border-radius: 1rem;
+				}
+
 				&.technicalSvg {
 					position: absolute;
 					top: 50%;

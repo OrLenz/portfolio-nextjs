@@ -170,8 +170,8 @@
 
 @include media($max: $mobile) {
 	.container {
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-left: .75rem;
+		padding-right: .75rem;
 		width: 100%;
 
 		&.hidden {
@@ -188,15 +188,20 @@
 		}
 		.menuHeader {
 			width: 100%;
+
+			a {
+				font-size: .9rem;
+			}
 		}
 		.menu {
 			flex-direction: column;
+			margin: .5rem auto;
 		}
 		.menuContent {
 			transition: transform, cubic-bezier(0.4, 0, 0.2, 1), 300ms;
 			max-height: 0vh;
 			overflow: hidden;
-			
+
 			&[data-open="true"] {
 				transition: transform, cubic-bezier(0.4, 0, 0.2, 1), 300ms;
 				max-height: 100vh;
@@ -205,8 +210,9 @@
 
 			ul {
 				flex-direction: column;
-				gap: 2rem;
-				margin: 2rem;
+				gap: 1.5rem;
+				margin: 1.5rem 1rem;
+				font-size: .9rem;
 			}
 		}
 	}

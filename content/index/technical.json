@@ -1,16 +1,16 @@
 {
 	"title": "Technical",
 	"preTitle": "Hardskills",
-	"subTitle": "As a full stack engineer, I build scalable systems end-to-end — from frontend interfaces to backend microservices and cloud infrastructure — using a diverse and evolving set of tools and technologies.",
+	"subTitle": "Building scalable systems end-to-end — from frontend interfaces to backend microservices and cloud infrastructure.",
 	"polymath": {
 		"title": "Full stack foundations",
 		"icon": ["fat", "chart-network"],
-		"copy": "With a strong foundation across frontend, backend, and cloud infrastructure, I bring a holistic perspective to every project. I am constantly learning and adapting — whether it's picking up a new framework for a modernization effort or diving into cloud-native patterns for enterprise-scale deployments."
+		"copy": "With a strong foundation across frontend, backend, and cloud infrastructure, I bring a holistic perspective to every project — constantly learning and adapting to new frameworks and cloud-native patterns."
 	},
 	"software": {
 		"title": "Software I love to work with",
 		"icon": "grid-2-plus",
-		"copy": "I leverage a carefully curated set of tools to maximize productivity and collaboration. From design and API testing to database management and architectural planning, these are the tools that power my daily workflow.",
+		"copy": "Tools I use daily to maximize productivity — from design and API testing to database management and architecture planning.",
 		"list": [
 			{ "key": "vscode",			"name": "VSCode",			"type": "devicon" },
 			{ "key": "figma",			"name": "Figma",			"type": "devicon" },
@@ -26,7 +26,7 @@
 	"tech": {
 		"title": "Technologies I love to build with",
 		"icon": "laptop-code",
-		"copy": "I deeply enjoy solving problems through code — from frontend interfaces to backend services, cloud infrastructure, and everything in between. These are the core technologies I work with across my projects.",
+		"copy": "From frontend to backend, cloud infrastructure, and beyond — these are the core technologies powering my projects.",
 		"list": [
 			{ "key": "java",			"name": "Java",				"type": "devicon" },
 			{ "key": "go",				"name": "Go",				"type": "devicon" },

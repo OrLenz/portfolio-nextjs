@@ -120,33 +120,50 @@
 @include media($max: $mobile) {
 	.section {
 		.area {
+			gap: .75rem;
+
 			.company,
 			.position {
-				padding: 2rem 1rem;
+				padding: 1.25rem 1rem;
 			}
 			.position {
+				margin-left: 0;
 				padding-bottom: 1rem;
 				--padding-top: 1rem;
+				border-left: 3px solid var(--secondary);
+				border-radius: 0 1rem 1rem 0;
 			}
 			.companyContent {
 				max-width: 100%;
+				gap: .5rem;
 			}
 			.positionContent {
-				gap: 1rem;
+				gap: .75rem;
 				max-width: 100%;
+
+				.list {
+					gap: .5rem;
+
+					.subList {
+						margin-left: 1.25rem;
+						font-size: .825rem;
+					}
+				}
 			}
 			p {
-				font-size: .8rem;
+				font-size: .875rem;
+				line-height: 1.5;
 			}
 			ul.list {
 				li {
-					font-size: .8rem;
+					font-size: .875rem;
+					line-height: 1.4;
 				}
 			}
-			
+
 			ul:not(.list) {
 				li {
-					font-size: .6rem;
+					font-size: .7rem;
 				}
 			}
 		}
