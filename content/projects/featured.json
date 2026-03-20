@@ -1,14 +1,60 @@
 {
 	"title": "Featured Projects",
 	"preTitle": "Portfolio",
-	"subTitle": "A curated selection of projects I've built — more coming soon as I prepare demos and writeups.",
+	"subTitle": "A curated selection of products I've built — additional projects will be added as I finalize demos and writeups.",
 	"projects": [
 		{
-			"project": "Coming Soon",
+			"project": "Hallo Bos",
+			"url": "https://bosv2.hallolaundry.com",
+			"repo": "Private",
+			"descriptionTitle": "A comprehensive super app for laundry business owners.",
+			"description": "Hallo Bos is the central management platform of the Hallo Laundry ecosystem — built to give owners full visibility and control over their operations. Features include a real-time transactional dashboard, granular outlet configuration (services, IoT machines, storage racks, discounts, additional costs, GPS-based attendance, and invoice notes), employee management with HRIS capabilities (attendance tracking and payroll), customer management, detailed transaction pages, and a full accounting module with financial statements. The platform also provides deep analytics across customers, outlets, employees, revenue, and costs — along with IoT activity logs and role-based access management for multi-branch and regional operations.",
+			"imageOptions": [
+				{ "key": "dashboard", "hover": "left", "h": 624, "w": 1112 }
+			],
+			"images": [
+				{ "key": "dashboard", "url": "/img/hallo-bos-dashboard-preview.png", "hover": "left", "h": 624, "w": 1112 }
+			],
+			"stack": [
+				{ "key": "nextjs",			"name": "Next.js",			"type": "devicon" },
+				{ "key": "react",			"name": "React",			"type": "devicon" },
+				{ "key": "typescript",		"name": "TypeScript",		"type": "devicon" },
+				{ "key": "nestjs",			"name": "NestJS",			"type": "devicon" },
+				{ "key": "postgresql",		"name": "PostgreSQL",		"type": "devicon" },
+				{ "key": "redis",			"name": "Redis",			"type": "devicon" },
+				{ "key": "docker",			"name": "Docker",			"type": "devicon" },
+				{ "key": "googlecloud",		"name": "GCP",				"type": "devicon" }
+			]
+		},
+		{
+			"project": "Hallo Kasir",
+			"url": "https://play.google.com/store/apps/details?id=com.hallo.cashier_v2",
+			"repo": "Private",
+			"descriptionTitle": "A mobile point-of-operations app for laundry outlet operators.",
+			"description": "Hallo Kasir is the operator-facing mobile application in the Hallo Laundry ecosystem — designed for day-to-day outlet operations. Operators can manage the full laundry transaction lifecycle: accepting customer drop-offs, tracking processing stages, marking orders as complete, and coordinating delivery or customer pickup. The app also supports petty cash requests and usage tracking, outlet-to-company cash deposits, daily outlet cost reporting, and customer registration. Currently available on Android via Google Play, with an iOS version in development.",
+			"imageOptions": [
+				{ "key": "preview", "hover": "right", "h": 900, "w": 420 }
+			],
+			"images": [
+				{ "key": "preview", "url": "/img/hallo-kasir-preview.jpeg", "hover": "right", "h": 900, "w": 420 }
+			],
+			"stack": [
+				{ "key": "flutter",			"name": "Flutter",			"type": "devicon" },
+				{ "key": "dart",			"name": "Dart",				"type": "devicon" },
+				{ "key": "firebase",		"name": "Firebase",			"type": "devicon" },
+				{ "key": "nestjs",			"name": "NestJS",			"type": "devicon" },
+				{ "key": "postgresql",		"name": "PostgreSQL",		"type": "devicon" },
+				{ "key": "redis",			"name": "Redis",			"type": "devicon" },
+				{ "key": "docker",			"name": "Docker",			"type": "devicon" },
+				{ "key": "googlecloud",		"name": "GCP",				"type": "devicon" }
+			]
+		},
+		{
+			"project": "More Coming Soon",
 			"url": "",
 			"repo": "",
-			"descriptionTitle": "Projects are being prepared.",
-			"description": "I'm currently arranging and managing the projects I want to showcase here, including deploying demo versions. Stay tuned!",
+			"descriptionTitle": "Additional projects are on the way.",
+			"description": "I'm currently preparing more projects to showcase — including deploying live demos, writing case studies, and documenting in-progress work. Stay tuned for updates.",
 			"imageOptions": [],
 			"images": [],
 			"stack": []

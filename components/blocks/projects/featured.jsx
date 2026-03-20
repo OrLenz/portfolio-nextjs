@@ -13,6 +13,11 @@ export default function FeaturedProject({ content }, index) {
 
 	const { project, url, repo, descriptionTitle,description, stack, imageOptions, images } = content
 
+	const isWideImage = images.length > 0 && images[0].w > images[0].h
+	const layoutClass = images.length > 0 
+		? (isWideImage ? css.wideLayout : css.tallLayout) 
+		: css.noImageLayout
+
 	const controls = useAnimation();
 	const { ref, inView  } = useInView({
 		"threshold": 0.25,
@@ -27,7 +32,7 @@ export default function FeaturedProject({ content }, index) {
 	return (
 		<m.section 	
 			key={index}
-			className={css.project} 
+			className={`${css.project} ${layoutClass}`} 
 			//framer-motion
 			ref={ref}
 			variants={container}
@@ -44,16 +49,20 @@ export default function FeaturedProject({ content }, index) {
 					<div className={css.description}>
 						<p><strong>{descriptionTitle}</strong> {description}</p>
 					</div>
-					{stack.length > 0 &&
-					<div className={css.stackContainer}>
-						<Badges list={stack} block="stack" fullContainer={false} color={false} />
+					<div className={css.projectMeta}>
+						{stack.length > 0 &&
+						<div className={css.stackContainer}>
+							<Badges list={stack} block="stack" fullContainer={false} color={false} />
+						</div>
+						}
+						{url &&
+						<m.div variants={''} className={css.viewProject}>
+							<a href={url} target="_blank" rel="noopener noreferrer">
+								<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
+							</a>
+						</m.div>
+						}
 					</div>
-					}
-					{url &&
-					<m.div variants={''} className={css.viewProject}>
-						<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
-					</m.div>
-					}
 				</div>
 			</div>
 
@@ -65,7 +74,7 @@ export default function FeaturedProject({ content }, index) {
 						return (
 							<m.div key={`${index}-${key}`} variants={item}>
 								<m.div variants={hover}>
-									<Image src={url} alt="x" height={h} width={w} />
+									<Image src={url} alt={project} height={h} width={w} />
 								</m.div>
 							</m.div>
 						)}

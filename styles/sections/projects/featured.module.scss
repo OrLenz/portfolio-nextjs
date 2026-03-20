@@ -4,22 +4,17 @@
 	border-bottom: 1px solid var(--primary-dark);
 }
 
+// ==============================================
+// Base project card
+// ==============================================
 .project {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 	user-select: none;
-
 	border-radius: 2rem;
 	background-color: var(--background-dim2);
-    border: 1px solid var(--primary-dark);
+	border: 1px solid var(--primary-dark);
 
 	.viewProject svg {
 		@include transition;
-	}
-
-	&:nth-of-type(2n) {
-		flex-direction: row-reverse;
 	}
 
 	&:hover {
@@ -32,8 +27,10 @@
 	}
 }
 
-
-.projectHeader  {
+// ==============================================
+// Project header (shared)
+// ==============================================
+.projectHeader {
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-3x);
@@ -58,19 +55,10 @@
 		}
 	}
 
-	p {
-		font-size: 1.75rem;
-		line-height: 1.3;
-
-		strong {
-			color: var(--primary-bright);
-		}
-	}
-
 	.viewProject {
 		svg {
 			height: 1.5rem;
-			color: var(--primary);	
+			color: var(--primary);
 		}
 	}
 
@@ -91,17 +79,23 @@
 			height: fit-content;
 		}
 	}
-
 }
 
+.projectMeta {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+// ==============================================
+// Details panel (shared)
+// ==============================================
 .details {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 0;
-	flex-shrink: 1;
 	gap: var(--size-3x);
 	overflow: hidden;
-
 	padding: 2rem;
 
 	h3 {
@@ -121,38 +115,129 @@
 	}
 }
 
-.imageContainer {
-	z-index: 3;
-	position: relative;
-	display: block;
-	width: 50%;
-	border-radius: 1rem;
-	flex-grow: 1;
-	flex-shrink: 0;
+// ==============================================
+// Wide layout — stacked: text on top, image below
+// (for desktop/dashboard screenshots)
+// ==============================================
+.wideLayout {
+	display: flex;
+	flex-direction: column;
 
-	.imageAnimationContainer {
-		position: absolute;
-		overflow: hidden;
-		border-radius: 2rem;
-		height: calc(100% - 6rem);
-		width: calc(100% + 9rem);
-		right: 0;
-		bottom: 0;
+	.details {
+		flex-shrink: 0;
 
-		> div > div {
+		p {
+			font-size: 1.25rem;
+			line-height: 1.4;
 
-			> span {
-				position: absolute !important;
-				right: 4rem;
-	
+			strong {
+				color: var(--primary-bright);
+			}
+		}
+	}
+
+	.imageContainer {
+		position: relative;
+		width: 100%;
+		padding: 0 1.5rem 1.5rem;
+
+		.imageAnimationContainer {
+			width: 100%;
+			overflow: hidden;
+			border-radius: 1rem;
+
+			> div > div {
 				img {
-					width: calc(556px / 1.25) !important;
+					display: block;
+					width: 100% !important;
+					height: auto !important;
+					border-radius: 0.75rem;
 				}
 			}
 		}
 	}
 }
 
+// ==============================================
+// Tall layout — side-by-side: text left, phone peek right
+// (for mobile app screenshots)
+// ==============================================
+.tallLayout {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	&:nth-of-type(2n) {
+		flex-direction: row-reverse;
+	}
+
+	.details {
+		flex-grow: 0;
+		flex-shrink: 1;
+
+		p {
+			font-size: 1.75rem;
+			line-height: 1.3;
+
+			strong {
+				color: var(--primary-bright);
+			}
+		}
+	}
+
+	.imageContainer {
+		z-index: 3;
+		position: relative;
+		width: 50%;
+		border-radius: 2rem;
+		flex-grow: 1;
+		flex-shrink: 0;
+		overflow: hidden;
+
+		.imageAnimationContainer {
+			position: absolute;
+			overflow: hidden;
+			border-radius: 2rem;
+			height: calc(100% - 6rem);
+			width: calc(100% + 9rem);
+			right: 0;
+			bottom: 0;
+
+			> div > div {
+				position: absolute;
+				right: 4rem;
+
+				img {
+					width: calc(556px / 1.25) !important;
+					height: auto !important;
+				}
+			}
+		}
+	}
+}
+
+// ==============================================
+// No image layout — full-width text card
+// ==============================================
+.noImageLayout {
+	display: flex;
+	flex-direction: column;
+
+	.details {
+		p {
+			font-size: 1.25rem;
+			line-height: 1.4;
+
+			strong {
+				color: var(--primary-bright);
+			}
+		}
+	}
+}
+
+// ==============================================
+// Private/public badge
+// ==============================================
 .privateOr {
 	display: flex;
 	flex-direction: row;
@@ -268,11 +353,12 @@
 	}
 }
 
+// ==============================================
+// Mobile responsive
+// ==============================================
 @include media($max: $mobile) {
 	.project {
 		&:nth-of-type(n) {
-			flex-direction: column;
-
 			&:hover {
 				.details {
 					border-color: var(--primary-dim2);
@@ -285,11 +371,6 @@
 
 				h3 {
 					font-size: 1rem;
-				}
-
-				p {
-					font-size: .875rem;
-					line-height: 1.4;
 				}
 			}
 
@@ -304,47 +385,83 @@
 					font-size: .65rem;
 				}
 			}
+		}
+	}
+
+	// Wide layout mobile: stack text + full-width image
+	.wideLayout {
+		&:nth-of-type(n) {
+			.details p {
+				font-size: .875rem;
+				line-height: 1.4;
+			}
 
 			.imageContainer {
-				height: 100px;
-				width: 100%;
+				padding: 0 0.75rem 0.75rem;
 			}
 
 			.imageAnimationContainer {
-				height: calc(100% + 6rem);
-				width: 100%;
-
 				> div > div {
-					> span {
-						img {
-							width: calc(556px / 2) !important;
-						}
-					}
-				}
-			}
-		}
-
-		&:nth-of-type(2n+1) {
-			.imageAnimationContainer {
-				> div > div {
-					> span {
-						right: 2rem;
-					}
-				}
-			}
-		}
-
-		&:nth-of-type(2n) {
-			.imageAnimationContainer {
-				> div > div {
-					> span {
-						right: 0rem;
+					img {
+						border-radius: 0.5rem;
 					}
 				}
 			}
 		}
 	}
-	
+
+	// Tall layout mobile: centered phone screenshot
+	.tallLayout {
+		&:nth-of-type(n) {
+			flex-direction: column;
+
+			.details p {
+				font-size: .875rem;
+				line-height: 1.4;
+			}
+
+			.imageContainer {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				padding: 0 1.5rem 1.5rem;
+			}
+
+			.imageAnimationContainer {
+				position: relative;
+				height: auto;
+				width: auto;
+				right: auto;
+				bottom: auto;
+				overflow: hidden;
+				border-radius: 1rem;
+
+				> div > div {
+					position: relative;
+					right: auto;
+
+					img {
+						width: 200px !important;
+						height: auto !important;
+						border-radius: 1rem;
+					}
+				}
+			}
+		}
+	}
+
+	// No image mobile
+	.noImageLayout {
+		&:nth-of-type(n) {
+			.details p {
+				font-size: .875rem;
+				line-height: 1.4;
+			}
+		}
+	}
+
 	.bgContainer {
 		.orbitalBg {
 			width: unset;
